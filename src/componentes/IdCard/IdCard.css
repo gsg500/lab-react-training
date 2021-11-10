@@ -1,0 +1,10 @@
+.container {
+  display: flex;
+  border: 1px;
+  margin-bottom: 50px;
+}
+
+.person-info li {
+  margin: 1px;
+  list-style-type: none;
+}
