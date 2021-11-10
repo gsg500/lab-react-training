@@ -1,13 +1,13 @@
-.credit-card-container {
-  font-family: sans-serif;
+.containerCard {
   display: inline-flex;
 }
-
-.credit-card {
+.cardContainer {
   width: 350px;
-  padding: 10px 30px;
-  margin: 5px 60px;
-  border-radius: 15px;
+  height: auto;
+
+  border-radius: 10px;
+  margin: 5px;
+  padding: 10px;
 }
 
 .card-flag-container {
@@ -21,20 +21,16 @@
   width: 50px;
 }
 
-.card-expire {
+.cardContainer header {
   display: flex;
-  width: 70%;
-  justify-content: space-between;
-  margin: 0;
+  align-items: center;
+  justify-content: right;
+}
+.cardContainer h2 {
+  display: flex;
+  justify-content: right;
 }
 
-.card-numbers {
-  font-size: 2.8rem;
-  font-weight: 100;
-  margin-top: 8px;
-  margin-bottom: 10px;
-}
-
-.card-owner {
-  margin-top: 3px;
+.bankName {
+  margin-left: 20px;
 }

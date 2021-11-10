@@ -1,7 +1,6 @@
 .container {
   display: flex;
-  border: 1px;
-  margin-bottom: 50px;
+  border: 1px solid;
 }
 
 .person-info li {

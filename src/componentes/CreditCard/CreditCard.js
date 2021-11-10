@@ -12,22 +12,18 @@ function CreditCard(props) {
   }
   return (
     <div className="containerCard">
-      <div className="credit-card" style={{ backgroundColor: props.bgColor }}>
+      <div className="cardContainer" style={{ backgroundColor: props.bgColor }}>
         <div style={{ color: props.color }}>
-          <header className="card-flag-container">
-            <img className="card-flag" src={flag} alt="flag" />
+          <header>
+          <img className="card-flag" src={flag} alt="flag" />
           </header>
-          <h2 className="card-numbers">
-            •••• •••• •••• {props.number.substr(-4)}
-          </h2>
-          <p className="card-expire">
-            <span>
-              Expires {props.expirationMonth}/
-              {props.expirationYear.toString().substr(-2)}
-            </span>
-            <span>{props.bank}</span>
+          <h1>•••• •••• ••••{props.number.substr(-4)}</h1>
+          <p>
+            Expires {props.expirationMonth}/
+            {props.expirationYear.toString().substr(-2)}
+            <span className="bankName">{props.bank}</span>
           </p>
-          <p className="card-owner">{props.owner}</p>
+          <p>{props.owner}</p>
         </div>
       </div>
     </div>
