@@ -1,0 +1,21 @@
+#grid-profile {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr))
+}
+
+.profile-mirror {
+    border: solid 1px black;
+    display: flex;
+    padding: 10px;
+    margin: 4px;
+    font-size: 0.9rem;
+}
+
+.profile-mirror img {
+    width: 100px;
+    margin-right: 10px;
+}
+
+.profile-mirror span {
+    font-weight: bolder;
+}

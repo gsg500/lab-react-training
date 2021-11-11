@@ -7,16 +7,15 @@ function DriverCard(props) {
     <div>
       <div className="innerContainer">
         <div>
-          <img className="driver-picture" src={props.img} alt="" />
+          <img className="driver-color" src={props.img} alt="" />
         </div>
         <div>
           <h2>{props.name}</h2>
           <h2>
             <Rating>{props.rating}</Rating>
           </h2>
-
           <p>
-            {props.car.model}-{props.car.licensePlate}
+            {props.car.model}-{props.car.licenseCar}
           </p>
         </div>
       </div>

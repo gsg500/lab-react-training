@@ -6,6 +6,13 @@ import BoxColor from './componentes/BoxColor/BoxColor';
 import CreditCard from './componentes/CreditCard/CreditCard';
 import Rating from './componentes/Rating/Rating';
 import DriverCard from './componentes/DriverCard/DriverCard';
+import LikeButton from './componentes/LikeButton/LikeButton';
+import ClickablePicture from './componentes/ClickablePicture/ClickablePicture';
+import Dice from './componentes/Dice/Dice';
+import Carousel from './componentes/Carousel/Carousel';
+import NumbersTable from './componentes/NumbersTable/NumbersTable';
+import FaceBook from './componentes/FaceBook/FaceBook';
+import SignupPage from './componentes/SignupPage/SignupPage';
 
 function App() {
   return (
@@ -19,8 +26,7 @@ function App() {
           height={178}
           birth={new Date('1992-07-14')}
           picture="https://randomuser.me/api/portraits/men/44.jpg"
-        />
-
+        />        
         <IdCard
           lastName="Delores "
           firstName="Obrien"
@@ -29,25 +35,29 @@ function App() {
           birth={new Date('1988-05-11')}
           picture="https://randomuser.me/api/portraits/women/44.jpg"
         />
-      </div>{' '}
+      </div>
+      <hr />
       <div>
         <Greetings language="">Guilherme</Greetings>
         <Greetings lang="de">Ludwig</Greetings>
         <Greetings lang="fr">François</Greetings>
       </div>
+      <hr />
       <div>
         <Random min={10} max={100} />
       </div>
+      <hr />
       <div>
         <h1>BoxColor</h1>
         <BoxColor r={255} g={0} b={0}>
           rgb (255,0,0)
         </BoxColor>
-
+        <hr />
         <BoxColor r={128} g={255} b={0}>
           rgb (128,255,0)
         </BoxColor>
       </div>
+      <hr />
       <div>
         <h1>Credit Card</h1>
       </div>
@@ -83,6 +93,7 @@ function App() {
           color="white"
         />
       </div>
+      <hr />
       <div>
         <h1>Rating</h1>
         <div>
@@ -94,6 +105,7 @@ function App() {
           <Rating>5</Rating>
         </div>
         <div>
+        <hr />
           <h1>DriverCard</h1>
           <div>
             <DriverCard
@@ -116,7 +128,41 @@ function App() {
             />
           </div>
         </div>
+        <hr />
+      </div>      
+      <div><LikeButton /></div>    
+      <hr />
+      <div>
+        <ClickablePicture
+          img="./img/persons/maxence.png"
+          imgClicked="./img/persons/maxence-glasses.png"
+        />
       </div>
+      <hr />
+      <Dice />   
+
+      <div>
+      <hr />
+      <Carousel
+  imgs={[
+    'https://randomuser.me/api/portraits/women/1.jpg',
+    'https://randomuser.me/api/portraits/men/1.jpg',
+    'https://randomuser.me/api/portraits/women/2.jpg',
+    'https://randomuser.me/api/portraits/men/2.jpg'
+  ]}
+/> <hr />
+      </div>      
+      <div> 
+      <NumbersTable limit={12} />
+      </div>
+      <div>
+        <hr />
+      </div>
+      <div>
+      <FaceBook />
+      </div>
+      <hr />
+      <SignupPage />
     </>
   );
 }
